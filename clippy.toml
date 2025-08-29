@@ -1,0 +1,36 @@
+# Clippy configuration
+# See: https://doc.rust-lang.org/clippy/configuration.html
+
+# The maximum allowed size for arrays on the stack
+array-size-threshold = 512000
+
+# The maximum allowed size for a type to be passed by value
+pass-by-value-size-limit = 256
+
+# The maximum allowed size for a single binding
+single-char-binding-size-limit = 4
+
+# The maximum allowed size for the name of a type
+type-complexity-threshold = 250
+
+# Enable additional lints
+enable-all = false
+
+# Allow certain lints
+allow = [
+    "clippy::module_name_repetitions",
+    "clippy::too_many_arguments",
+    "clippy::too_many_lines",
+    "clippy::if_not_else",
+    "clippy::similar_names",
+    "clippy::must_use_candidate"
+]
+
+# Deny certain lints
+deny = [
+    "clippy::unwrap_used",
+    "clippy::expect_used",
+    "clippy::panic",
+    "clippy::unimplemented",
+    "clippy::todo"
+]

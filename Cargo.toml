@@ -1,0 +1,19 @@
+[package]
+name = "steelseries-sonar"
+version = "0.1.0"
+edition = "2024"
+authors = ["Mark7888 <l.mark@gmail.com>"]
+description = "A Rust library for interacting with the SteelSeries Sonar API"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/Mark7888/steelseries-sonar-rs"
+keywords = ["steelseries", "sonar", "audio", "gaming", "api"]
+categories = ["api-bindings", "multimedia::audio"]
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json", "rustls-tls", "blocking"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+dirs = "5.0"
+tokio = { version = "1.0", features = ["full"] }
